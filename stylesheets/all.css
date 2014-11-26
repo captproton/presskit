@@ -1,0 +1,512 @@
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/whmii/workspace/presskit/source/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #C52D2F;
+    color: white; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "calluna-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 18, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 4em;
+  color: #C52D2F; }
+
+/* line 23, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 1.2em; }
+
+/* line 28, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.125em;
+  font-weight: 700; }
+
+/* line 33, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h4 {
+  color: #65666C;
+  font-size: 1.125em; }
+
+/* line 38, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+p {
+  color: #65666C;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin: 0 0 1.5em; }
+
+/* line 53, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477DCA;
+  font-size: 1.125em;
+  text-decoration: none; }
+  /* line 59, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #C52D2F;
+    cursor: pointer; }
+  /* line 64, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #C52D2F;
+    outline: none; }
+
+/* line 70, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #65666C;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 78, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 83, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #65666C;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 90, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 94, /Users/whmii/workspace/presskit/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #7e7f86;
+  border: 1px solid #65666C;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1em; }
+
+/* line 16, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #65666C;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #4c4d52; }
+  /* line 48, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 55, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 68, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%; }
+
+/* line 74, /Users/whmii/workspace/presskit/source/stylesheets/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/whmii/workspace/presskit/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #404144;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/whmii/workspace/presskit/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #65666C;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/whmii/workspace/presskit/source/stylesheets/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 22, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 27, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 33, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+#usage-guidelines ul {
+  margin: 0.9375em 0 1.875em; }
+  /* line 36, /Users/whmii/workspace/presskit/source/stylesheets/base/_lists.scss */
+  #usage-guidelines ul li {
+    color: #65666C;
+    font-size: 1.25em;
+    list-style-type: disc;
+    list-style-position: inside; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 2, /Users/whmii/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+body {
+  border-top: solid 0.5em #C52D2F;
+  padding-top: 8.125em; }
+
+/* line 6, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+header {
+  margin-bottom: 5em; }
+  /* line 15, /Users/whmii/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 12, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+nav a {
+  color: #65666C;
+  display: inline-block;
+  font-family: "calluna-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: 0.625em;
+  position: relative;
+  text-decoration: none; }
+  /* line 20, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  nav a.active {
+    color: #C52D2F; }
+    /* line 23, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+    nav a.active:before {
+      border-bottom: 8px solid transparent;
+      border-left: 8px solid #C52D2F;
+      border-top: 8px solid transparent;
+      content: "";
+      height: 0;
+      left: -0.625em;
+      position: absolute;
+      top: 0.875em;
+      width: 0; }
+
+/* line 38, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+h4 {
+  margin-top: 3.125em; }
+
+/* line 42, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+img {
+  margin-top: 1.875em; }
+
+/* line 46, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+.download-assets {
+  border-radius: 0.3125em;
+  border: solid 1px #477DCA;
+  display: inline-block;
+  font-family: "calluna-sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-top: 1.25em;
+  padding: 0.3125em 0.625em 0.625em; }
+  /* line 54, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  .download-assets:hover {
+    color: #477DCA;
+    opacity: 0.8; }
+  /* line 59, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  .download-assets:before {
+    position: relative;
+    top: 0.375em;
+    height: 1.375em;
+    width: 1.5625em;
+    background-image: url("/images/download-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 25px;
+    content: "";
+    display: inline-block;
+    padding-right: 0.3125em;
+    position: relative; }
+
+/* line 72, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#signature {
+  display: block; }
+  /* line 75, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  #signature .sans-logotype,
+  #signature .stacked-vertical {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 81, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  #signature .sans-logotype {
+    margin-right: 8.125em; }
+
+/* line 87, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#usage-guidelines h3 {
+  text-transform: uppercase; }
+  /* line 90, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  #usage-guidelines h3:first-of-type {
+    color: #C52D2F; }
+  /* line 94, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  #usage-guidelines h3:nth-of-type(2n) {
+    color: #72CA11; }
+
+/* line 102, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container,
+#colors .secondary-color-container {
+  margin-top: 3.125em; }
+  /* line 106, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+  #colors .primary-color-container .color-specs,
+  #colors .secondary-color-container .color-specs {
+    display: inline-block;
+    vertical-align: top; }
+    /* line 110, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+    #colors .primary-color-container .color-specs h3,
+    #colors .primary-color-container .color-specs h4,
+    #colors .primary-color-container .color-specs hr,
+    #colors .secondary-color-container .color-specs h3,
+    #colors .secondary-color-container .color-specs h4,
+    #colors .secondary-color-container .color-specs hr {
+      margin: 0 0 1.25rem 1.375rem; }
+/* line 119, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .primary-color {
+  height: 18.75em;
+  width: 12.5em;
+  background: #C52D2F;
+  display: inline-block; }
+/* line 125, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shifts {
+  display: inline-block;
+  margin-left: -0.25em; }
+/* line 130, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-1,
+#colors .primary-color-container .opacity-shift-2,
+#colors .primary-color-container .opacity-shift-3,
+#colors .primary-color-container .opacity-shift-4,
+#colors .primary-color-container .opacity-shift-5 {
+  height: 3.75em;
+  width: 3.75em; }
+/* line 138, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-1 {
+  background: #d23a3c; }
+/* line 142, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-2 {
+  background: #d74e50; }
+/* line 146, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-3 {
+  background: #db6365; }
+/* line 150, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-4 {
+  background: #e07879; }
+/* line 154, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .primary-color-container .opacity-shift-5 {
+  background: #e58d8e; }
+/* line 160, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .secondary-color {
+  height: 18.75em;
+  width: 12.5em;
+  background: #393B44;
+  display: inline-block; }
+/* line 166, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shifts {
+  display: inline-block;
+  margin-left: -0.25em; }
+/* line 171, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-1,
+#colors .secondary-color-container .opacity-shift-2,
+#colors .secondary-color-container .opacity-shift-3,
+#colors .secondary-color-container .opacity-shift-4,
+#colors .secondary-color-container .opacity-shift-5 {
+  height: 3.75em;
+  width: 3.75em; }
+/* line 179, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-1 {
+  background: #454752; }
+/* line 183, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-2 {
+  background: #505360; }
+/* line 187, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-3 {
+  background: #5c5f6e; }
+/* line 191, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-4 {
+  background: #686b7b; }
+/* line 195, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#colors .secondary-color-container .opacity-shift-5 {
+  background: #737789; }
+
+/* line 204, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography h3 {
+  font-size: 1.5em;
+  line-height: 1.5em; }
+/* line 209, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography .typeface-name {
+  margin: 1.875em 0 0.625em; }
+/* line 213, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography .uppercase,
+#typography .lowercase {
+  letter-spacing: 0.3125em; }
+/* line 218, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography .uppercase {
+  text-transform: uppercase; }
+/* line 223, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography .header-typeface h3 {
+  font-weight: 500; }
+/* line 229, /Users/whmii/workspace/presskit/source/stylesheets/shared/_main.scss */
+#typography .body-typeface h3 {
+  font-family: "freight-text-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 500; }
+
+/* line 1, /Users/whmii/workspace/presskit/source/stylesheets/partials/_layout.scss */
+.page-wrap {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, /Users/whmii/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bourbon-4.0.2/app/assets/stylesheets/addons/_clearfix.scss */
+  .page-wrap:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 5, /Users/whmii/workspace/presskit/source/stylesheets/partials/_layout.scss */
+.nav-wrap {
+  float: left;
+  display: block;
+  margin-right: 3.21543%;
+  width: 19.72133%;
+  padding-top: 2.8125em; }
+  /* line 38, /Users/whmii/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .nav-wrap:last-child {
+    margin-right: 0; }
+
+/* line 10, /Users/whmii/workspace/presskit/source/stylesheets/partials/_layout.scss */
+.main-content-wrap {
+  float: left;
+  display: block;
+  margin-right: 3.21543%;
+  width: 77.06324%;
+  margin-left: 22.93676%;
+  float: none; }
+  /* line 38, /Users/whmii/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .main-content-wrap:last-child {
+    margin-right: 0; }
+
+/* line 16, /Users/whmii/workspace/presskit/source/stylesheets/partials/_layout.scss */
+section {
+  margin-bottom: 8.125em; }
+
+/* line 20, /Users/whmii/workspace/presskit/source/stylesheets/partials/_layout.scss */
+.intro {
+  padding-top: 3.125em; }
